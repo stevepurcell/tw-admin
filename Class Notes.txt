@@ -1,0 +1,50 @@
+New Project
+
+Create package.json
+npm init -y
+
+Install tailwindcss  (2.2.16 for this course)
+
+npm install tailwindcss <-- latest version
+
+npm install tailwindcss@2.2.16  <-- course version
+
+In project folder, create src and public folders.
+
+In src create style.css
+
+style.css 
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+Build tailwindcss styles.css file
+
+In package.json add a script to do this.
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwind build src/styles.css -o public/styles.css"
+  },
+
+npm run build
+
+
+Utility notes
+
+mx-auto - centers the current container  (x is the horizontal axis)
+
+Width and height of element
+
+1 rem is equal to the height and width of one element in pixels 
+
+w-0 no 
+
+see docs
+
+
+Flexbox
+
+
+
